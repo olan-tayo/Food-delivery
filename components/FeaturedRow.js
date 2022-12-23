@@ -27,8 +27,6 @@ const FeaturedRow = ({ title, description, id }) => {
       })
   }, [])
 
-  console.log(restaurants)
-
   return (
     <View>
       <View className="mt-4 flex flex-row items-center justify-between px-4">
@@ -47,7 +45,7 @@ const FeaturedRow = ({ title, description, id }) => {
       >
         {/* RESTAURANT CARDS */}
 
-        {restaurants.map((data, index) => {
+        {restaurants?.map((data, index) => {
           return (
             <RestaurantCards
               key={index}
